@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install"
+    "dev": "concurrently \"npx nx run frontend\" \"npx nx run backend\""
   },
   "private": true,
   "dependencies": {
