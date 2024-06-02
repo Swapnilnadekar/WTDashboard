@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "frontend": "nx serve frontend",
-    "backend":"nx serve backend",
-    "start": "concurrently \"npx nx run frontend\" \"npx nx run backend\""
+    "backend": "nx serve backend",
+    "start": "npx concurrently \"nx serve frontend\" \"nx serve backend\""
   },
   "private": true,
   "dependencies": {
@@ -59,6 +59,7 @@
     "@vitejs/plugin-react": "^4.2.0",
     "@vitest/ui": "^1.3.1",
     "babel-jest": "^29.4.1",
+    "concurrently": "^8.2.2",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "2.27.5",
