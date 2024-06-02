@@ -5,7 +5,7 @@
   "scripts": {
     "frontend": "nx serve frontend",
     "backend":"nx serve backend",
-    "dev": "concurrently \"npx nx run frontend\" \"npx nx run backend\""
+    "start": "concurrently \"npx nx run frontend\" \"npx nx run backend\""
   },
   "private": true,
   "dependencies": {
