@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "vite build"
+    "frontend": "nx serve frontend",
+    "backend":"nx serve backend",
+    "dev": "concurrently \"npx nx run frontend\" \"npx nx run backend\""
   },
   "private": true,
   "dependencies": {
