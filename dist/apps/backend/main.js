@@ -332,7 +332,7 @@ async function bootstrap() {
         allowedHeaders: 'Origin,X-Requested-With,Content-Type,Accept,Authorization',
         credentials: true,
     });
-    await app.listen(port);
+    await app.listen(port, '0.0.0.0');
     common_1.Logger.log(`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`);
 }
 bootstrap();
