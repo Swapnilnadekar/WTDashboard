@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"npx nx run frontend\" \"npx nx run backend\""
+    "build:frontend": "vite build --config apps/frontend/vite.config.ts",
+    "build:backend": "nx build backend",
+    "build": "npm run build:frontend && npm run build:backend"
   },
   "private": true,
   "dependencies": {
